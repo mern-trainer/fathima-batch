@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --primary-color: #2f1c6a;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero{
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.search_btn{
+    background-color: #d63163;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.secondary-color{
+    background: rgba(47, 28, 106, 0.1);
+}
