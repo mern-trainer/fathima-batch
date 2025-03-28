@@ -164,6 +164,23 @@
             k++
         } while (k < 0);
 
+        // prime -> 2 factors
+
+        function is_prime(number=182){
+            if(number == 0 || number == 1){
+                return false
+            }
+            for(let i = 2; i <= number/2; i++){
+                if(number % i == 0){
+                    return false
+                }
+            }
+            return true
+        } 
+
+        const result = is_prime(1)
+
+        console.log(result);
     </script>
 </body>
 </html>
