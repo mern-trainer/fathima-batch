@@ -106,3 +106,177 @@ console.log(elems);
 // same as getElementsByClassName and getElementsByTagName
 
 // ----------------------------------------------------------------------------
+
+// callback -> function passed as an argument to another function
+// asynchronous -> non-blocking -> Multiple task execution at the same time.
+// synchronous -> blocking -> Line by line execution of code
+
+// promise, async await, memoization
+
+
+
+const sum = (a, b, cb) => {
+    const s = a + b
+    cb(s)
+}
+
+sum(10, 30, (value) => {
+    console.log(value);
+})
+
+// time out
+
+// setTimeout(() => {
+//     console.log("Hello World");
+// }, 5000) // im milliseconds 5000ms == 5s
+
+// promise -> used to handle asynchronous operations.
+// states of promise -> pending, fulfilled, rejected
+
+const getMessage = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Display after 5 seconds");
+        }, 5000);
+    })
+}
+
+// const res = getMessage()
+
+// console.log(res);
+
+// getMessage().then((res) => {
+//     console.log("success:",res);
+// }).catch((err) => {
+//     console.log("error:",err);
+// })
+
+// async await -> used to handle asynchronous operations.
+
+// async function sample() {
+    
+// }
+
+// 
+// '{"name": "skdhf", "age": 78}' -> JSON 
+
+// const handleMessageCall = async () => {
+//     const res = await getMessage()
+//     console.log(res);
+// }
+
+// handleMessageCall()
+
+// memoization -> optimizing the performance of a function by caching its results.
+
+const map = new Map()   // map -> key value pair
+
+const sumOfTwoNumbers = (a, b) => {
+    const key = a + "-" + b
+    if (map.has(key)) {
+        return map.get(key)
+    }
+    console.log("Calculating...");
+    const s = a + b
+    map.set(key, s)
+    return s
+}
+
+
+console.log(sumOfTwoNumbers(1,2));
+console.log(sumOfTwoNumbers(1,2));
+console.log(sumOfTwoNumbers(1,2));
+console.log(sumOfTwoNumbers(5,4));
+console.log(sumOfTwoNumbers(5,4));
+console.log(sumOfTwoNumbers(1,2));
+
+console.log(map);
+
+
+// api calling
+
+// fetch
+
+const fetchData = async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+    const data = await res.json()
+    console.log(data);
+}
+
+// fetchData()
+
+const cache = new Map()
+
+const MemoizedFetch = async (id) => {
+    if (cache.has(id)) {
+        return cache.get(id)
+    }
+    console.log("Fetching...");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + id)
+    const data = await res.json()
+    cache.set(id, data)    
+    return data
+}
+
+const handleCalling = async () => {
+    let res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    res = await MemoizedFetch(6)
+    console.log(res);
+    
+    console.log("Fetching completed");
+}
+
+handleCalling()
