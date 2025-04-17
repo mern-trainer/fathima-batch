@@ -1,7 +1,7 @@
 // inline, external, framework - bootstrap
 
 import { Fragment } from "react"
-import { Button, Card, Carousel, Container, Image, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Button, Card, Carousel, Container, Dropdown, Image, Nav, Navbar, NavDropdown } from "react-bootstrap"
 
 
 const App = () => {
@@ -169,6 +169,22 @@ const App = () => {
                 </Card.Body>
             </Card>
         </div>
+
+        <div className="p-4">
+        <Image thumbnail fluid src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="7up"/>
+        </div>
+
+        <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Dropdown Button
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
     </Fragment>
 }
 
