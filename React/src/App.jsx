@@ -1,12 +1,12 @@
 // inline, external, framework - bootstrap
 
 import { Fragment } from "react"
-import { Button, Card, Carousel, Container, Dropdown, Image, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Button, Card, Carousel, Col, Container, Dropdown, Image, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
 
 
 const App = () => {
     return <Fragment>
-        <Navbar expand="md" bg="dark" className="navbar-dark">
+        {/* <Navbar expand="md" bg="dark" className="navbar-dark">
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <Image src="https://www.7up.com/images/7up-logo-large.png" alt="7up" height={50}/>
@@ -184,7 +184,129 @@ const App = () => {
                 <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
+
+        <Container fluid>
+            <Row className="g-1">
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs="12" sm="6" md="4" lg="3" xl="2">
+                    <Card>
+                        <Card.Img variant="top" src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="success" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>            
+        </Container>
     </Fragment>
 }
 
