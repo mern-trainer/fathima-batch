@@ -2,6 +2,7 @@
 
 import { Fragment } from "react"
 import { Button, Card, Carousel, Col, Container, Dropdown, Image, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
+import HomePage from "./pages/HomePage"
 
 
 const App = () => {
@@ -186,7 +187,7 @@ const App = () => {
             </Dropdown.Menu>
         </Dropdown> */}
 
-        <Container fluid>
+        {/* <Container fluid>
             <Row className="g-1">
                 <Col xs="12" sm="6" md="4" lg="3" xl="2">
                     <Card>
@@ -306,7 +307,8 @@ const App = () => {
                     </Card>
                 </Col>
             </Row>            
-        </Container>
+        </Container> */}
+        <HomePage />
     </Fragment>
 }
 
