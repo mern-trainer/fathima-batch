@@ -3,6 +3,7 @@
 import { Fragment } from "react"
 import { Button, Card, Carousel, Col, Container, Dropdown, Image, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
 import HomePage from "./pages/HomePage"
+import Mapping from "./pages/Mapping"
 
 
 const App = () => {
@@ -308,7 +309,8 @@ const App = () => {
                 </Col>
             </Row>            
         </Container> */}
-        <HomePage />
+        {/* <HomePage /> */}
+        <Mapping />
     </Fragment>
 }
 
