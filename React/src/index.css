@@ -21,3 +21,7 @@
 .text-red{
     color: red;
 } */
+
+.outline-none{
+    outline: none;
+}

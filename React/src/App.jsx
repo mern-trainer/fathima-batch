@@ -4,6 +4,7 @@ import { Fragment } from "react"
 import { Button, Card, Carousel, Col, Container, Dropdown, Image, Nav, Navbar, NavDropdown, Row } from "react-bootstrap"
 import HomePage from "./pages/HomePage"
 import Mapping from "./pages/Mapping"
+import TodoList from "./pages/TodoList"
 
 
 const App = () => {
@@ -310,7 +311,8 @@ const App = () => {
             </Row>            
         </Container> */}
         {/* <HomePage /> */}
-        <Mapping />
+        {/* <Mapping /> */}
+        <TodoList />
     </Fragment>
 }
 
