@@ -315,8 +315,8 @@ const App = () => {
         </Container> */}
         {/* <HomePage /> */}
         {/* <Mapping /> */}
-        {/* <TodoList /> */}
-        <ComponentA />
+        <TodoList />
+        {/* <ComponentA /> */}
     </Fragment>
 }
 

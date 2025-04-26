@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { FaTrash } from "react-icons/fa"
 import { toast } from "react-toastify"
+import TodoItem from "../components/TodoItems"
 
 const TodoList = () => {
 
@@ -34,10 +34,7 @@ const TodoList = () => {
         <div className="w-100 mt-2 d-flex flex-column gap-2" style={{maxWidth: "500px"}}>
             {
                 todoList.map((item, index) => {
-                    return <div key={index} className="p-2 border d-flex justify-content-between align-items-center border-2 border-secondary w-100">
-                        <div>{item}</div>
-                        <button onClick={() => handleDelete(index)} className="btn text-danger"><FaTrash /></button>
-                    </div>
+                    return <TodoItem key={index} index={index} item={item} setTodoList={setTodoList}/>
                 })
             }
         </div>
