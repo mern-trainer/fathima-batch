@@ -1,6 +1,7 @@
-const ComponentB = ({ data, name, age }) => {
+const ComponentB = ({ counter, setCounter }) => {
     return <div>
-        Component B - {data} {name} {age}
+        <button onClick={() => setCounter(counter + 1)}>Update</button>
+        Component B - {counter}
     </div>
 }
 

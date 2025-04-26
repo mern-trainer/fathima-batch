@@ -1,9 +1,14 @@
+import { useState } from "react"
 import ComponentB from "./ComponentB"
 
 const ComponentA = () => { // parent
+
+    const [counter, setCounter] = useState(0)
+
     return <div>
         Component A
-        <ComponentB data="Data from Component A" name="Fathima" age={20} /> {/* child */}
+        
+        <ComponentB counter={counter} setCounter={setCounter} /> {/* child */}
     </div>
 }
 
