@@ -5,7 +5,10 @@ import { Button, Card, Carousel, Col, Container, Dropdown, Image, Nav, Navbar, N
 import HomePage from "./pages/HomePage"
 import Mapping from "./pages/Mapping"
 import TodoList from "./pages/TodoList"
+import ComponentA from "./pages/ComponentA"
 
+// {property} props in react -> state -> component data -> 
+// pass data from one component to another
 
 const App = () => {
     return <Fragment>
@@ -312,7 +315,8 @@ const App = () => {
         </Container> */}
         {/* <HomePage /> */}
         {/* <Mapping /> */}
-        <TodoList />
+        {/* <TodoList /> */}
+        <ComponentA />
     </Fragment>
 }
 
