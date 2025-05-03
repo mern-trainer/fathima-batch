@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { toast } from "react-toastify"
 import TodoItem from "../components/TodoItems"
+import Navbar from "../components/NavBar"
 
 const TodoList = () => {
 
@@ -24,6 +25,7 @@ const TodoList = () => {
     }
 
     return <div className="d-flex flex-column align-items-center">
+        <Navbar/>
         <h1>Todo List</h1>
         <div className="d-flex w-100" style={{maxWidth: "500px"}}>
             <input onChange={(e) => { // controlled 

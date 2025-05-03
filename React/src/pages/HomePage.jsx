@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react"
+import Navbar from "../components/NavBar"
 
 // states -> An object that holds the data of a component
 // Hooks -> functions that let you use state and other React features without writing a class.
@@ -78,6 +79,7 @@ const HomePage = () => {
     }
 
     return <div className="d-flex gap-4 mt-4 flex-column align-items-center">
+        <Navbar />
         {/* {age} */}
         <div className="fw-bold">Counter One: {counters.one}</div>
         <div className="fw-bold">Counter Two: {counters.two}</div>
