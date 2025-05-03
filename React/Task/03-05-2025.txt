@@ -1,0 +1,38 @@
+Task: Create a Multi-Page React Website
+
+Requirements:
+
+1. Pages to implement:
+   - Home page
+   - About page 
+   - Contact page
+
+2. Navigation:
+   - Implement a responsive header/navbar
+   - Enable smooth navigation between pages using React Router
+
+3. Page Content Requirements:
+
+   Home Page:
+   - Header with navigation
+   - Image carousel/slider
+   - Latest products section with grid layout
+   - Location details
+   - Responsive footer with site information
+
+   About Page:
+   - Team member profiles with images and descriptions
+   - Product showcase with details
+   - Company history/mission statement
+
+   Contact Page:
+   - Contact form with the following fields:
+     * Name
+     * Email
+     * Subject
+     * Message
+
+4. Technical Requirements:
+   - Build with React.js
+   - Implement responsive design for all screen sizes
+   - Use modern CSS practices (Flexbox/Grid)
