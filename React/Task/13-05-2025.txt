@@ -1,0 +1,7 @@
+create a cart management with product listing and cart page. product list is given in products.js file.
+
+should have a header section for navigate to product listing page and cart page
+
+use context api for handing cart states
+
+cart page should have a remove button for each product to remove items from cart
