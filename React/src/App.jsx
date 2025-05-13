@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import TodoList from "./pages/TodoList"
 import HomePage from "./pages/HomePage"
 import Error404 from "./pages/Error404"
+import Dynamic from "./pages/Dynamic"
 
 const App = () => {
     return <BrowserRouter>
@@ -16,9 +17,14 @@ const App = () => {
 
         {/* Nested Routes */}
 
+        {/* useParams(),  useNavigate() */}
+
         <Routes>
             <Route path="/">
                 <Route path="" Component={HomePage} />
+                <Route path="dynamic">
+                    <Route path=":random_id?" Component={Dynamic} />
+                </Route>
                 <Route path="todo" Component={TodoList} />
                 <Route path="user">
                     <Route path="" element={<div>USER PAGE</div>} />
