@@ -3,6 +3,8 @@ import TodoList from "./pages/TodoList"
 import HomePage from "./pages/HomePage"
 import Error404 from "./pages/Error404"
 import Dynamic from "./pages/Dynamic"
+import ProductListing from "./pages/ProductListing"
+import CartList from "./pages/CartList"
 
 const App = () => {
     return <BrowserRouter>
@@ -22,6 +24,8 @@ const App = () => {
         <Routes>
             <Route path="/">
                 <Route path="" Component={HomePage} />
+                <Route path="products" Component={ProductListing} />
+                <Route path="cart" Component={CartList} />
                 <Route path="dynamic">
                     <Route path=":random_id?" Component={Dynamic} />
                 </Route>

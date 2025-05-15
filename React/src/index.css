@@ -7,6 +7,10 @@
     --primary-color: #00D2C6;
 }
 
+body{
+    background-color: #ddd;
+}
+
 /* .bg-primary{
     background-color: var(--primary-color);
 }
