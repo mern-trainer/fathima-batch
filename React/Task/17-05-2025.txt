@@ -22,4 +22,4 @@ Create a React application that:
 - Includes a "Get New Joke" button to fetch and display a new joke
 - Automatically fetches a new joke when page is refreshed
 - Handle both single and two-part jokes (setup/delivery format)
-- Add loading state while fetching new jokes
+- Add loading state while fetching new jokes 
