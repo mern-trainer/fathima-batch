@@ -1,0 +1,25 @@
+Task 1: E-commerce Product Gallery with Cart
+Create a React application that:
+- Fetches product data from https://dummyjson.com/products API
+- Displays products in a responsive grid of product cards
+- Each card should show:
+  - Product image
+  - Title
+  - Price
+  - Rating
+  - Description
+  - Add to cart button
+- Implement a shopping cart feature that:
+  - Shows selected items
+  - Calculates total price
+  - Allows quantity adjustment
+  - Allows item removal
+
+Task 2: Random Joke Generator
+Create a React application that:
+- Fetches jokes from https://v2.jokeapi.dev/joke/Any API
+- Displays a random joke on initial page load
+- Includes a "Get New Joke" button to fetch and display a new joke
+- Automatically fetches a new joke when page is refreshed
+- Handle both single and two-part jokes (setup/delivery format)
+- Add loading state while fetching new jokes
