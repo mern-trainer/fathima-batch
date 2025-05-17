@@ -5,6 +5,7 @@ import Error404 from "./pages/Error404"
 import Dynamic from "./pages/Dynamic"
 import ProductListing from "./pages/ProductListing"
 import CartList from "./pages/CartList"
+import EffectPage from "./pages/Effect"
 
 const App = () => {
     return <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/">
                 <Route path="" Component={HomePage} />
                 <Route path="products" Component={ProductListing} />
+                <Route path="effect" Component={EffectPage} />
                 <Route path="cart" Component={CartList} />
                 <Route path="dynamic">
                     <Route path=":random_id?" Component={Dynamic} />
