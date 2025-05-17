@@ -39,3 +39,14 @@ console.log(newObj);
 const { city, ...rest } = obj2
 
 console.log(obj2, rest);
+
+const n = 10
+
+switch (n) {
+    case n < 20:
+        console.log("Odd");
+        break;
+    default:
+        console.log("Even");
+        break;
+}
