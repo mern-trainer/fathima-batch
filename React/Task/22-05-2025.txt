@@ -1,0 +1,22 @@
+1. Create a simple counter:
+   - Add increment/decrement buttons
+   - Display current count
+   - Reset counter functionality
+   - Add step size control
+
+2. Build a todo list:
+   - Add new todo items
+   - Mark items as complete
+   - Delete todo items
+   - Filter todos by status
+
+3. Create a calculator:
+   - Basic arithmetic operations
+   - Clear/reset function
+   - Display calculation history
+
+4. Build a form validator:
+   - Check required fields
+   - Validate email format
+   - Match password confirmation
+   - Show error messages
