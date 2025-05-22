@@ -8,6 +8,7 @@ import CartList from "./pages/CartList"
 import EffectPage from "./pages/Effect"
 import Form from "./pages/Form"
 import Formik from "./pages/Formik"
+import ReduxPage from "./pages/Redux"
 
 const App = () => {
     return <BrowserRouter>
@@ -31,6 +32,7 @@ const App = () => {
                 <Route path="effect" Component={EffectPage} />
                 <Route path="form" Component={Form} />
                 <Route path="formik" Component={Formik} />
+                <Route path="redux" Component={ReduxPage} />
                 <Route path="cart" Component={CartList} />
                 <Route path="dynamic">
                     <Route path=":random_id?" Component={Dynamic} />
