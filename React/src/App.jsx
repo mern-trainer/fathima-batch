@@ -9,6 +9,7 @@ import EffectPage from "./pages/Effect"
 import Form from "./pages/Form"
 import Formik from "./pages/Formik"
 import ReduxPage from "./pages/Redux"
+import UseEffectPage from "./pages/UseEffect"
 
 const App = () => {
     return <BrowserRouter>
@@ -28,6 +29,7 @@ const App = () => {
         <Routes>
             <Route path="/">
                 <Route path="" Component={HomePage} />
+                <Route path="useeffect" Component={UseEffectPage} />
                 <Route path="products" Component={ProductListing} />
                 <Route path="effect" Component={EffectPage} />
                 <Route path="form" Component={Form} />
