@@ -10,6 +10,7 @@ import Form from "./pages/Form"
 import Formik from "./pages/Formik"
 import ReduxPage from "./pages/Redux"
 import UseEffectPage from "./pages/UseEffect"
+import DynamicPath from "./pages/DynamicPath"
 
 const App = () => {
     return <BrowserRouter>
@@ -24,9 +25,23 @@ const App = () => {
 
         {/* Nested Routes */}
 
+        <Routes>
+            <Route path="/">
+                <Route path="" Component={HomePage} />
+                <Route path="dynamic">
+                    <Route path=":id?" Component={DynamicPath} />
+                </Route>
+                <Route path="user">
+                    <Route path="" element={<div>USER PAGE</div>} />
+                    <Route path="settings" element={<div>USER SETTINGS</div>} />
+                    <Route path="profile" element={<div>USER PROFILE</div>} />
+                </Route>
+            </Route>
+        </Routes>
+
         {/* useParams(),  useNavigate() */}
 
-        <Routes>
+        {/* <Routes>
             <Route path="/">
                 <Route path="" Component={HomePage} />
                 <Route path="useeffect" Component={UseEffectPage} />
@@ -47,7 +62,7 @@ const App = () => {
                 </Route>
                 <Route path="*" Component={Error404} />
             </Route>
-        </Routes>
+        </Routes> */}
     </BrowserRouter>
 }
 
