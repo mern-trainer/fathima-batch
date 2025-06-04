@@ -1,27 +1,19 @@
-// stream -> Continues flow of data
-// read, write
+// http
 
-const fs = require("fs");
+const http = require("http");
 
-const readStream = fs.createReadStream("dataFile.txt", { encoding: "utf-8" })
-const writeStream = fs.createWriteStream("resultFile.txt", { encoding: "utf-8" })
+const server = http.createServer()
 
-// pipe
-// data
+server.on("request", (req, res) => {
+    const path = req.url;
 
-// readStream.on("data", (chunk) => {
-//     writeStream.write(`CHUNK: ${chunk}`);
-// })
+    if (path == "/") {
+        return res.end("Welcome to home page")
+    }
 
-readStream.pipe(writeStream);
-// error
-
-readStream.on("error", (error) => {
-    console.log("Error happend", error.message);
+    return res.end("Page Not Found!")
 })
 
-// end
-
-readStream.on("end", () => {
-    console.log("File reading is completed");
+server.listen(8080, () => {
+    console.log("Server is running on port 8080\nhttp://localhost:8080")
 })
