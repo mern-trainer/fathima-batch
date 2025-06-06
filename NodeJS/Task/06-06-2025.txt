@@ -1,0 +1,33 @@
+Product Management System Backend
+
+Requirements:
+
+1. Product Creation API
+   - Implement endpoint to create new products
+   - Required fields:
+     * Title
+     * Description 
+     * Price
+     * Rating
+     * Discount Price
+     * Additional product metadata
+
+2. Product Retrieval APIs
+   - Get all products
+   - Fetch single product by ID
+   - Support filtering and sorting options
+
+3. Product Update API
+   - Enable updating individual product fields
+   - Support partial updates
+   - Validate field modifications
+
+4. Product Deletion API
+   - Implement soft delete functionality
+   - Add verification before permanent deletion
+   - Handle related data cleanup
+
+Technical Specifications:
+- Use RESTful API design
+- Implement proper error handling
+- Add input validation
